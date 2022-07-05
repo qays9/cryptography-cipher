@@ -17,21 +17,33 @@
 
 
  <style>
- // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-@media (min-width: 360px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } 
-
-@media (min-width: 1400px) { ... } 
+@media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+	.yourPic{
+	    padding-left: 0%;
+	}
+}
+@media only screen and (min-width:321px) and (max-width:400px)  { /* smartphones, Android phones, landscape iPhone */
+	.yourPic{
+	    padding-left: 10%;
+	}
+}
+@media only screen and (min-width:401px) and (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 25%;
+	}
+	
+}
+@media only screen and (min-width:601px) and (max-width:767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 30%;
+	}
+}
+@media only screen and (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media only screen and (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+}
+@media only screen and (max-width:1281px) {  
+}
 </style>
 
 
@@ -50,8 +62,7 @@
     <button data-aos="zoom-in-up"  data-aos-delay="800" class="button"  onclick="location.href='index.html'" style="float: right;" >HOME</button>
 	    <button data-aos="zoom-in-up"  data-aos-delay="800" class="button"  onclick="location.href='cipher.html'" style="float: right;" >Cipher</button><br><br><br>
 	<hr>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+      <br><br><br><br>
 
 
 
@@ -60,19 +71,17 @@
        
         <div class="inOut">
 		<div class ="media">
-          <textarea data-aos="zoom-in-up"  data-aos-delay="800" class="button" name="input" rows="6" cols="70" id="inputMessage" placeholder="Input"></textarea>
-          <span>
+          <textarea data-aos="zoom-in-up"  data-aos-delay="800" class="button" name="input" rows="4" cols="50" id="inputMessage" placeholder="Input"></textarea>
+          <span><br>
             <button data-aos="zoom-in-up"  data-aos-delay="800" class="button"  class="polyButton cipherMethod" id="cipherButtonPoly" onclick="cipherButtonFunction()" >Cipher</button>
             <button data-aos="zoom-in-up"  data-aos-delay="800" class="button"  class="polyButton decipherMethod" id="decipherButton" onclick="decipherButtonFunction()">Decipher</button>
-            <br><br><br><br><br><br>
-          </span>
-          <textarea data-aos="zoom-in-up"  data-aos-delay="800" class="button" name="result" rows="6" cols="70" id="result" placeholder="Output"></textarea>
+          
+          </span><br>
+          <textarea data-aos="zoom-in-up"  data-aos-delay="800" class="button" name="result" rows="4" cols="50" id="result" placeholder="Output"></textarea>
         </div>
 		</div>
     
-       <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br>
- 
-
+    
 
   <script type="text/javascript"src="binary.js"></script>
   <script type="text/javascript" src="main.js"></script>
